@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Taiwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Secret Number</title>
+  </head>
+  <body>
+    <!-- Main Container  -->
+    <div class=" mainContainer flex flex-wrap bg-cyan-400 h-screen justify-center content-center ">
+      <!-- Card -->
+      <div
+        class="flex justify-center flex-col content-center border-lg rounded-xl p-6 shadow-xl bg-white"
+      >
+        <!-- upper card -->
+        <div
+        class="flex p-4 flex-col space-y-4 items-center border-b-2 rounded-xl"
+        >
+          <div class="font-bold text-3xl">Guess the secret number !!</div>
+          <div
+            class=" secretNumber w-24 h-24 bg-white border rounded-xl shadow-xl p-4 font-thin text-center text-justify-center text-5xl"
+          >
+            ?
+          </div>
+          <button
+            class=" tryagain border border-lg px-4 py-1 bg-yellow-400 hover:bg-green-400 text-md rounded-lg font-normal shadow-md hover:scale-105 hover:rounded-xl duration-200 hover:text-red-500 hover:font-semibold hover:text-white"
+          >
+            Try Again
+          </button>
+        </div>
+        <!-- lower card -->
+        <div class="flex space-x-4 p-4">
+          <!-- Left card -->
+          <div class=" flex flex-col space-y-4 py-10 px-8 justify-center content-center">
+                <input type="text" placeholder="00" class=" guess w-16 h-15 p-3 shadow-xl border border-lg rounded-lg text-3xl outline-0 placeholder:font-thinx  ">
+            <button class=" check flex border border-lg py-2 px-6 rounded-lg text-lg shadow-md hover:translate-y-0.5 duration-150 font-semibold">Check</button>
+          </div>
+          <!-- Right Card -->
+          <div class=" flex flex-col items-center justify-center py-4 font-normal text-lg w-52 ">
+            <div class=" message flex items-center my-2">
+                <p class="text-center">Start Guessing 🤔</p>
+            </div>
+            <div class="flex items-center flex-col content-center">
+                <p class="font-semibold">Score</p>
+                <p class=" score text-red-500 font-semibold ">20</p>
+            </div>
+            <div class="flex items-center flex-col content-center">
+               <p class="font-semibold">High Score</p> 
+               <p class="highScore text-green-500 font-semibold ">0</p> 
+            </div>
+          </div>
+        </div>
+        <div class="font-thin text-sm text-center mt-2">Made with ❤️</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
